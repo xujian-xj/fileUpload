@@ -1,0 +1,9 @@
+spring:
+  servlet:
+    multipart:
+      enabled: false
+      # maxFileSize 单个数据大小
+      max-file-size: 10240MB
+      # maxRequestSize 是总数据大小
+      max-request-size: 20480MB
+      #springBoot项目自带的tomcat对上传的文件大小有默认的限制，SpringBoot官方文档中展示：每个文件的配置最大为1Mb，单次请求的文件的总数不能大于10Mb
